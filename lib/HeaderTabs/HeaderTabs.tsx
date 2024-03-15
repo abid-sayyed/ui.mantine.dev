@@ -166,7 +166,7 @@ export function HeaderTabs() {
         <Tabs
           defaultValue="Home"
           variant="outline"
-          visibleFrom="sm"
+          visibleFrom={opened ? undefined : 'sm'}
           classNames={{
             root: classes.tabs,
             list: classes.tabsList,
